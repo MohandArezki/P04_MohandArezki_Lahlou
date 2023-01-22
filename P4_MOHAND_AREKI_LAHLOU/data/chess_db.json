@@ -1,0 +1,19 @@
+{"players":
+    {"1":{"INE":"AB12345","Firstname":"Constance","Lastname":"Lacombe","Date Of Birth":"22/01/2000","Gender":1,"Rank":2,"Score":18},
+     "2":{"INE":"CD12346","Firstname":"Thibault","Lastname":"Ribeiro","Date Of Birth":"17/12/1986","Gender":1,"Rank":3,"Score":15},
+     "3":{"INE":"AB12347","Firstname":"Agnès","Lastname":"Bernier","Date Of Birth":"20/11/1998","Gender":2,"Rank":4,"Score":17},
+     "4":{"INE":"GR12348","Firstname":"Yves","Lastname":"Augustin","Date Of Birth":"14/05/1990","Gender":1,"Rank":5,"Score":16},
+     "6":{"INE":"AB12349","Firstname":"Monique","Lastname":"Chauvet","Date Of Birth":"15/07/1988","Gender":0,"Rank":6,"Score":15},
+     "7":{"INE":"TR12350","Firstname":"Jeannine","Lastname":"Bodin","Date Of Birth":"06/04/1982","Gender":1,"Rank":7,"Score":11},
+     "8":{"INE":"MP12351","Firstname":"Philippe","Lastname":"Grondin-Fischer","Date Of Birth":"17/12/1988","Gender":2,"Rank":8,"Score":13},
+      "9":{"INE":"TS12352","Firstname":"Daniel","Lastname":"Colin","Date Of Birth":"30/07/1982","Gender":1,"Rank":9,"Score":15},
+     "10":{"INE":"AB12386","Firstname":"Paulette","Lastname":"Ruiz","Date Of Birth":"04/09/1984","Gender":1,"Rank":10,"Score":14},
+     "11":{"INE":"AB12387","Firstname":"Suzanne","Lastname":"De Sousa","Date Of Birth":"29/06/1981","Gender":2,"Rank":11,"Score":10},
+     "12":{"INE":"RD12388","Firstname":"Stéphane","Lastname":"Lemoine","Date Of Birth":"09/08/1992","Gender":1,"Rank":12,"Score":11},
+     "13":{"INE":"VS12389","Firstname":"Audrey","Lastname":"Munoz","Date Of Birth":"18/02/1980","Gender":1,"Rank":13,"Score":12},
+     "14":{"INE":"XD12390","Firstname":"Jules","Lastname":"Guichard","Date Of Birth":"02/03/1993","Gender":2,"Rank":14,"Score":13},
+     "15":{"INE":"YR12391","Firstname":"Roland","Lastname":"Hardy","Date Of Birth":"15/09/1985","Gender":0,"Rank":15,"Score":11},
+     "17":{"INE":"BH12392","Firstname":"Brigitte","Lastname":"Briand","Date Of Birth":"06/01/1992","Gender":1,"Rank":16,"Score":10},
+     "18":{"INE":"NV12393","Firstname":"Daniel","Lastname":"Roussel de la Jean","Date Of Birth":"05/02/1985","Gender":2,"Rank":1,"Score":8}
+     }
+    }
