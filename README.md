@@ -48,4 +48,8 @@ Développez un programme logiciel en Python
    python3 main.py 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p><!-- USAGE EXAMPLES -->
+
+### How to ?   
+<a href="https://github.com/MohandArezki/OC_DevPython_P4/img/oc4.gif"><img src="img/oc4.gif" alt="oc4-gif"></a>
+
