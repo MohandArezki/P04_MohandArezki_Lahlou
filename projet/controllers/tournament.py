@@ -295,7 +295,7 @@ class TournamentController:
         all_player_ids = [
             player.id for player in self.players_ctrl.select_all_players()]
         tournament_player_ids = [
-            player["Player"].id for player in self.tournament.players]
+            player.id for player in self.tournament.players]
         available_player_ids = set(all_player_ids) - set(tournament_player_ids)
         available_players = [self.players_ctrl.repository.get_player(
             player_id) for player_id in available_player_ids]
