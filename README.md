@@ -18,12 +18,8 @@ Développez un programme logiciel en Python
 2. Clone the project in desired directory ;
   
    git clone https://github.com/MohandArezki/OC_DevPython_P4.git
-  
-3. Change directory to project folder ;
-  
-   cd path/to/projet
-  
-4. Create a virtual environnement *(More detail to [Creating a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment))* ;
+ 
+3. Create a virtual environnement *(More detail to [Creating a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment))* ;
     * For Windows :
       
       python -m venv env
@@ -32,7 +28,7 @@ Développez un programme logiciel en Python
       
       python3 -m venv env
       
-5. Activate the virtual environment ;
+4. Activate the virtual environment ;
     * For Windows :
       
       .\env\Scripts\activate
@@ -41,9 +37,13 @@ Développez un programme logiciel en Python
       
       source env/bin/activate
       
-6. Install package of requirements.txt ;
+5. Install package of requirements.txt ;
    
    pip install -r requirements.txt
+
+6. Change directory to project folder ;
+  
+   cd path/to/projet
 
 7. excecute the programm 
    python3 main.py 
