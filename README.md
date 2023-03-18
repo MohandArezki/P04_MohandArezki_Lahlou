@@ -39,11 +39,11 @@ Développez un programme logiciel en Python
    
    pip install -r requirements.txt
 
-6. accéder au dossier du projet ;
+6. Accéder au dossier du projet ;
   
    cd path/to/projet
 
-7. excecuter the programm 
+7. Excecuter le programm 
    
    python3 main.py 
 
