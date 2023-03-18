@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>load.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <h1>
+            <a href="load.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               load.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev-1  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-1">
+                        F401
+                     </span>
+                     'os' imported but unused</li>
+               
+               </ul><tt><i>1</i> <span class="kn">import</span> <span class="nn">os</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="kn">from</span> <span class="nn">models.player</span> <span class="kn">import</span> <span class="n">Player</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> <span class="kn">from</span> <span class="nn">models.tournament</span> <span class="kn">import</span> <span class="n">Tournament</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev-1  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-1">
+                        F401
+                     </span>
+                     'models.match.Match' imported but unused</li>
+               
+               </ul><tt><i>4</i> <span class="kn">from</span> <span class="nn">models.match</span> <span class="kn">import</span> <span class="n">Match</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> <span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="kn">from</span> <span class="nn">controllers.player</span> <span class="kn">import</span> <span class="n">PlayerController</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> <span class="kn">from</span> <span class="nn">controllers.tournament</span> <span class="kn">import</span> <span class="n">TournamentController</span></tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i> &nbsp;</tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> &nbsp;</tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> <span class="n">genre_</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i> <span class="n">ctrlplayer</span> <span class="o">=</span> <span class="n">PlayerController</span><span class="p">()</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i> <span class="n">ctrltournament</span> <span class="o">=</span> <span class="n">TournamentController</span><span class="p">()</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> <span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span></tt>
+            </div>
+            <div id="l14"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+               </ul><tt><i>14</i> <span class="c1">#os.remove(&quot;data/db/chess_tournament.json&quot;)</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E225
+                     </span>
+                     Missing whitespace around operator</li>
+               
+               </ul><tt><i>15</i> <span class="n">players</span><span class="o">=</span><span class="p">[]</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>  <span class="c1"># set the number of players to generate</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>     <span class="n">nom</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">last_name</span><span class="p">()</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev- "><tt><i>18</i>     <span class="n">prenom</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">first_name</span><span class="p">()</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i>     <span class="n">ddn</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">date_time_between</span><span class="p">(</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev- "><tt><i>20</i>         <span class="n">start_date</span><span class="o">=</span><span class="s1">&#39;-50y&#39;</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="s1">&#39;-14y&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-%m-%Y&#39;</span><span class="p">)</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev- "><tt><i>21</i>     <span class="n">genre</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ','</li>
+               
+               </ul><tt><i>22</i>     <span class="n">clas</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1400</span><span class="p">,</span><span class="mi">1950</span><span class="p">)</span></tt>
+            </div>
+            <div id="l23"
+               class="code sev- "><tt><i>23</i>     <span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">prenom</span><span class="p">,</span> <span class="n">ddn</span><span class="p">,</span> <span class="n">genre_</span><span class="p">[</span><span class="n">genre</span><span class="p">],</span> <span class="n">clas</span><span class="p">)</span></tt>
+            </div>
+            <div id="l24"
+               class="code sev- "><tt><i>24</i>     <span class="c1"># Save player in DB</span></tt>
+            </div>
+            <div id="l25"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>25</i>     </tt>
+            </div>
+            <div id="l26"
+               class="code sev- "><tt><i>26</i>     <span class="n">ctrlplayer</span><span class="o">.</span><span class="n">repository</span><span class="o">.</span><span class="n">add_player</span><span class="p">(</span><span class="n">player</span><span class="p">)</span></tt>
+            </div>
+            <div id="l27"
+               class="code sev- "><tt><i>27</i> <span class="n">players</span> <span class="o">=</span> <span class="n">ctrlplayer</span><span class="o">.</span><span class="n">repository</span><span class="o">.</span><span class="n">get_all_players</span><span class="p">()</span></tt>
+            </div>
+            <div id="l28"
+               class="code sev- "><tt><i>28</i> <span class="n">tournaments</span> <span class="o">=</span> <span class="p">[</span></tt>
+            </div>
+            <div id="l29"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (173 > 119 characters)</li>
+               
+               </ul><tt><i>29</i>  <span class="c1">#   {&quot;nb joueurs&quot;:20,&quot;name&quot;: &quot;9e open d&#39;échecs de Thônes&quot;, &quot;location&quot;: &quot;THÔNES  (74)&quot;,&quot;begin_date&quot;: &quot;22/07/2023&quot;, &quot;end_date&quot;: &quot;28/07/2023&quot;,&quot;rondes&quot;: 7, &quot;time_control&quot;: &quot;B&quot;,</span></tt>
+            </div>
+            <div id="l30"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (185 > 119 characters)</li>
+               
+               </ul><tt><i>30</i>  <span class="c1">#               &quot;description&quot;: &quot;Tournoi Principal : 50€ adulte / 25€ jeune \n Tournoi Accession : 40€ adulte / 20€ jeune \n 300€ de prix, prix par catégories et trophée des familles&quot;},</span></tt>
+            </div>
+            <div id="l31"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E131
+                     </span>
+                     Continuation line unaligned for hanging indent</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ':'</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ',' (in 3 places)</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (263 > 119 characters)</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+            </div>
+            <div id="l32"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (267 > 119 characters)</li>
+               
+               </ul><tt><i>32</i>                 <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A (principal) :  Elo &gt; 1800 </span><span class="se">\n</span><span class="s2"> - 1er prix : 1 200€ - inscr. : 60€, jeunes 30€ </span><span class="se">\n</span><span class="s2"> B (accession) :  Elo &lt; 1900 </span><span class="se">\n</span><span class="s2">  - 1er prix : 500€ - inscr. : 50€, jeunes 25€ </span><span class="se">\n</span><span class="s2"> C (petizelos) :  Elo &lt; 1500 - 1er prix : 100€ - inscr : 40€, jeunes 20€&quot;</span><span class="p">},</span></tt>
+            </div>
+            <div id="l33"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (233 > 119 characters)</li>
+               
+               </ul><tt><i>33</i>  <span class="c1">#               {&quot;nb joueurs&quot;:30,&quot;name&quot;: &quot;VILLARD-DE-LANS (38)&quot;, &quot;location&quot;: &quot;Dans le massif du Vercors, à 25 km de Grenoble - Salle La Coupole.&quot;, &quot;begin_date&quot;: &quot;01/07/2023&quot;, &quot;end_date&quot;: &quot;08/07/2023&quot;,&quot;rondes&quot;: 4,&quot;time_control&quot;: &#39;Z&#39;,</span></tt>
+            </div>
+            <div id="l34"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (221 > 119 characters)</li>
+               
+               </ul><tt><i>34</i>  <span class="c1">#               &quot;description&quot;: &quot;Trophée Cristina Foisor, ouvert à tous -\n  total prix mini : 4 500€, 1er prix : 1 100€ - insc. : 52€ / 26€ jeunes  \n Tournoi d&#39;accession (moins 1500 Elo, mêmes horaires et cadences) \n \</span></tt>
+            </div>
+            <div id="l35"
+               class="code sev- "><tt><i>35</i>  <span class="c1">#               - 1er prix : 250€ -  insc. : 34€ / 17€ jeunes.&quot;}</span></tt>
+            </div>
+            <div id="l36"
+               class="code sev- "><tt><i>36</i>                 <span class="p">]</span></tt>
+            </div>
+            <div id="l37"
+               class="code sev- "><tt><i>37</i> &nbsp;</tt>
+            </div>
+            <div id="l38"
+               class="code sev- "><tt><i>38</i> <span class="k">for</span> <span class="n">tour</span> <span class="ow">in</span> <span class="n">tournaments</span><span class="p">:</span></tt>
+            </div>
+            <div id="l39"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E203
+                     </span>
+                     Whitespace before ','</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ','</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (138 > 119 characters)</li>
+               
+               </ul><tt><i>39</i>     <span class="n">tournament</span> <span class="o">=</span> <span class="n">Tournament</span><span class="p">(</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;time_control&quot;</span><span class="p">]</span> <span class="p">,</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;rondes&quot;</span><span class="p">])</span></tt>
+            </div>
+            <div id="l40"
+               class="code sev- "><tt><i>40</i>     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">]):</span></tt>
+            </div>
+            <div id="l41"
+               class="code sev- "><tt><i>41</i>         <span class="n">tournament</span><span class="o">.</span><span class="n">players</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">players</span><span class="p">[</span><span class="n">i</span><span class="p">])</span></tt>
+            </div>
+            <div id="l42"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+               </ul><tt><i>42</i>     <span class="c1">#for i in range(10):</span></tt>
+            </div>
+            <div id="l43"
+               class="code sev- "><tt><i>43</i>     <span class="c1">#    match= Match(players[i],players[i+10])</span></tt>
+            </div>
+            <div id="l44"
+               class="code sev- "><tt><i>44</i>     <span class="c1">#    tournament.rounds[0].add_match(match)</span></tt>
+            </div>
+            <div id="l45"
+               class="code sev- "><tt><i>45</i>     <span class="n">ctrltournament</span><span class="o">.</span><span class="n">repository</span><span class="o">.</span><span class="n">add_tournament</span><span class="p">(</span><span class="n">tournament</span><span class="p">)</span></tt>
+            </div>
+            <div id="l46"
+               class="code sev- "><tt><i>46</i> <span class="sd">&quot;&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l47"
+               class="code sev- "><tt><i>47</i> <span class="sd">    Comment se calcule le Elo ?</span></tt>
+            </div>
+            <div id="l48"
+               class="code sev- "><tt><i>48</i> <span class="sd">    Résultat de recherche d&#39;images pour &quot;tournois d&#39;echec Elo&quot;</span></tt>
+            </div>
+            <div id="l49"
+               class="code sev- "><tt><i>49</i> <span class="sd">    Après une partie donnée, le nouveau classement Elo de Garry est r′=r+K(s−p(D)).</span></tt>
+            </div>
+            <div id="l50"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (125 > 119 characters)</li>
+               
+               </ul><tt><i>50</i> <span class="sd">    r est l&#39;ancien classement de Garry, avant la partie, s=1 si Garry gagne la partie, 0,5 pour un nul et 0 pour une défaite.</span></tt>
+            </div>
+            <div id="l51"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W292
+                     </span>
+                     No newline at end of file</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (313 > 119 characters)</li>
+               
+               </ul><tt><i>51</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>

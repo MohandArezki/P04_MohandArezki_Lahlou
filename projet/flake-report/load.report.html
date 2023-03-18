@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: load.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="load.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               load.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  2
+               </span>
+               <strong>F401:</strong> 'os' imported but unused
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'os' imported but unused:</p>
+               
+               <a href="load.source.html#l1">
+                  <tt><i>1</i> <span class="kn">import</span> <span class="nn">os</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'models.match.Match' imported but unused:</p>
+               
+               <a href="load.source.html#l4">
+                  <tt><i>4</i> <span class="kn">from</span> <span class="nn">models.match</span> <span class="kn">import</span> <span class="n">Match</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  9
+               </span>
+               <strong>E501:</strong> line too long (173 > 119 characters)
+               
+                  (and 8 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (173 > 119 characters):</p>
+               
+               <a href="load.source.html#l29">
+                  <tt><i>29</i>  <span class="c1">#   {&quot;nb joueurs&quot;:20,&quot;name&quot;: &quot;9e open d&#39;échecs de Thônes&quot;, &quot;location&quot;: &quot;THÔNES  (74)&quot;,&quot;begin_date&quot;: &quot;22/07/2023&quot;, &quot;end_date&quot;: &quot;28/07/2023&quot;,&quot;rondes&quot;: 7, &quot;time_control&quot;: &quot;B&quot;,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (185 > 119 characters):</p>
+               
+               <a href="load.source.html#l30">
+                  <tt><i>30</i>  <span class="c1">#               &quot;description&quot;: &quot;Tournoi Principal : 50€ adulte / 25€ jeune \n Tournoi Accession : 40€ adulte / 20€ jeune \n 300€ de prix, prix par catégories et trophée des familles&quot;},</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (263 > 119 characters):</p>
+               
+               <a href="load.source.html#l31">
+                  <tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (267 > 119 characters):</p>
+               
+               <a href="load.source.html#l32">
+                  <tt><i>32</i>                 <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A (principal) :  Elo &gt; 1800 </span><span class="se">\n</span><span class="s2"> - 1er prix : 1 200€ - inscr. : 60€, jeunes 30€ </span><span class="se">\n</span><span class="s2"> B (accession) :  Elo &lt; 1900 </span><span class="se">\n</span><span class="s2">  - 1er prix : 500€ - inscr. : 50€, jeunes 25€ </span><span class="se">\n</span><span class="s2"> C (petizelos) :  Elo &lt; 1500 - 1er prix : 100€ - inscr : 40€, jeunes 20€&quot;</span><span class="p">},</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (233 > 119 characters):</p>
+               
+               <a href="load.source.html#l33">
+                  <tt><i>33</i>  <span class="c1">#               {&quot;nb joueurs&quot;:30,&quot;name&quot;: &quot;VILLARD-DE-LANS (38)&quot;, &quot;location&quot;: &quot;Dans le massif du Vercors, à 25 km de Grenoble - Salle La Coupole.&quot;, &quot;begin_date&quot;: &quot;01/07/2023&quot;, &quot;end_date&quot;: &quot;08/07/2023&quot;,&quot;rondes&quot;: 4,&quot;time_control&quot;: &#39;Z&#39;,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (221 > 119 characters):</p>
+               
+               <a href="load.source.html#l34">
+                  <tt><i>34</i>  <span class="c1">#               &quot;description&quot;: &quot;Trophée Cristina Foisor, ouvert à tous -\n  total prix mini : 4 500€, 1er prix : 1 100€ - insc. : 52€ / 26€ jeunes  \n Tournoi d&#39;accession (moins 1500 Elo, mêmes horaires et cadences) \n \</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (138 > 119 characters):</p>
+               
+               <a href="load.source.html#l39">
+                  <tt><i>39</i>     <span class="n">tournament</span> <span class="o">=</span> <span class="n">Tournament</span><span class="p">(</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;time_control&quot;</span><span class="p">]</span> <span class="p">,</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;rondes&quot;</span><span class="p">])</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (125 > 119 characters):</p>
+               
+               <a href="load.source.html#l50">
+                  <tt><i>50</i> <span class="sd">    r est l&#39;ancien classement de Garry, avant la partie, s=1 si Garry gagne la partie, 0,5 pour un nul et 0 pour une défaite.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (313 > 119 characters):</p>
+               
+               <a href="load.source.html#l51">
+                  <tt><i>51</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  6
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="load.source.html#l22">
+                  <tt><i>22</i>     <span class="n">clas</span> <span class="o">=</span> <span class="n">fake</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1400</span><span class="p">,</span><span class="mi">1950</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 3 places):</p>
+               
+               <a href="load.source.html#l31">
+                  <tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="load.source.html#l31">
+                  <tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="load.source.html#l39">
+                  <tt><i>39</i>     <span class="n">tournament</span> <span class="o">=</span> <span class="n">Tournament</span><span class="p">(</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;time_control&quot;</span><span class="p">]</span> <span class="p">,</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;rondes&quot;</span><span class="p">])</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l14">
+                  <tt><i>14</i> <span class="c1">#os.remove(&quot;data/db/chess_tournament.json&quot;)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="load.source.html#l42">
+                  <tt><i>42</i>     <span class="c1">#for i in range(10):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E131">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E131:</strong> continuation line unaligned for hanging indent
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l31">
+                  <tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E203">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E203:</strong> whitespace before ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l39">
+                  <tt><i>39</i>     <span class="n">tournament</span> <span class="o">=</span> <span class="n">Tournament</span><span class="p">(</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;time_control&quot;</span><span class="p">]</span> <span class="p">,</span><span class="n">tour</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">],</span> <span class="n">tour</span><span class="p">[</span><span class="s2">&quot;rondes&quot;</span><span class="p">])</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E225">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E225:</strong> missing whitespace around operator
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l15">
+                  <tt><i>15</i> <span class="n">players</span><span class="o">=</span><span class="p">[]</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l31">
+                  <tt><i>31</i>             <span class="p">{</span><span class="s2">&quot;nb joueurs&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;14e Festival international d’échecs de Vaujany&quot;</span><span class="p">,</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Dans le massif de l&#39;Oisans, à 50km de Grenoble - Salle de l’espace loisirs &quot;</span><span class="p">,</span> <span class="s2">&quot;begin_date&quot;</span><span class="p">:</span> <span class="s2">&quot;13/07/2023&quot;</span><span class="p">,</span><span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;21/07/2023&quot;</span><span class="p">,</span> <span class="s2">&quot;rondes&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;time_control&quot;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l51">
+                  <tt><i>51</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="load.source.html#l25">
+                  <tt><i>25</i>     </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
