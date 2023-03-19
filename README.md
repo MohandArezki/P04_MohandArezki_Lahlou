@@ -48,7 +48,7 @@ Développez un programme logiciel en Python
    python3 main.py 
 
 8. Générer un rapport flake8
-    flake8 --format=html --max-line-length 119 --htmldir=flake-report
+   flake8 --format=html --max-line-length 119 --htmldir=flake-report
 
 <p align="right">(<a href="#top">back to top</a>)</p><!-- USAGE EXAMPLES -->
 
