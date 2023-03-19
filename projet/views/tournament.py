@@ -136,3 +136,31 @@ class TournamentView(BaseView):
                                     match.comment])
             print(tab_matchs.get_string(title="Liste de matchs"))
         TournamentView.message("")
+
+    @staticmethod
+    def display_ronund(tournament):
+        os.system('cls||clear')
+        tab_matchs = PrettyTable()
+        title_msg = f"Tournoi [ {tournament.name} ] Ronde Actuelle [{tournament.actual_round.round_number}]"
+        tab_matchs.field_names = ["Blanc",
+                                  "Classement (Blanc)",
+                                  "Vs",
+                                  "Noir",
+                                  "Classement (Noir)"
+                                  ]
+        tab_matchs.clear_rows()
+        tab_matchs.min_width["Blanc"] = 34
+        tab_matchs.min_width["Noir"] = 34
+        tab_matchs.align["Blanc"] = "l"
+        tab_matchs.align["Noir"] = "l"
+        for match in tournament.actual_round.matchs:
+            tab_matchs.add_row([f"{match.players['White'].id})- {match.players['White'].fullname}",
+                                match.players['White'].rank,
+                                "Vs",
+                                f"{match.players['Black'].id})- {match.players['Black'].fullname}",
+                                match.players['Black'].rank
+                                ])
+        print(tab_matchs.get_string(title=title_msg))
+        # If the user confirms to export the table to a file, call the export method.
+        if TournamentView.confirm(MSG_CONFIRM, "N"):
+            TournamentView.export(title_msg, [tab_matchs])
