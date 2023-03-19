@@ -287,7 +287,8 @@ class TournamentController:
 
             self.tournament.actual_round.prepare()
             self.repository.update_tournament(self.tournament)
-            self.view.message(MSG_DONE)
+            self.view.display_ronund(self.tournament)
+
         else:
             self.view.message(MSG_CANCELLED)
 
