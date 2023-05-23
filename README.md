@@ -56,3 +56,8 @@ Développez un programme logiciel en Python
 ### How to ?   
 <a href="https://github.com/MohandArezki/OC_DevPython_P4/img/oc4.gif"><img src="img/oc4.gif" alt="oc4-gif"></a>
 
+<p align="center">
+    <img alt="validation" src="img/validation.png">
+    <br>
+</p>
+
