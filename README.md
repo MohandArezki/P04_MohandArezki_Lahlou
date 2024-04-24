@@ -3,9 +3,12 @@
     <br>
 </h3>
 
-# OpenClassrooms - Formation Développeur d'application Python - Projet 04
+# Projet 04
 Développez un programme logiciel en Python
-
+## Objectifs pédagogiques
+1. Utiliser la programmation orientée objet pour développer un programme Python
+2. Écrire un code Python robuste en utilisant la PEP 8
+3. Structurer le code d'un programme Python en utilisant un design pattern
 * [Python](https://www.python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
